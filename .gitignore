@@ -1,0 +1,15 @@
+.idea
+
+/venv
+
+*.pyc
+
+*.log
+
+/media
+
+.env
+
+.vscode
+
+/bancreach-venv

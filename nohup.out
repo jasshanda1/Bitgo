@@ -1,0 +1,392 @@
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 30, 2021 - 07:35:11
+Django version 2.2, using settings 'day_beacon.settings'
+Starting development server at http://0.0.0.0:1102/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[30/Aug/2021 07:35:21] "GET /docs/ HTTP/1.1" 200 3670
+[30/Aug/2021 07:35:21] "GET /docs/?format=openapi HTTP/1.1" 200 4334
+[30/Aug/2021 07:35:22] "GET /docs/?format=openapi HTTP/1.1" 200 4334
+[30/Aug/2021 07:35:23] "GET /static/rest_framework_swagger/images/favicon-32x32.png HTTP/1.1" 200 1654
+Not Found: /
+[30/Aug/2021 07:45:01] "GET / HTTP/1.1" 404 2265
+[30/Aug/2021 07:45:02] "GET /docs/ HTTP/1.1" 200 3805
+[30/Aug/2021 07:45:53] "GET /docs/ HTTP/1.1" 200 3670
+[30/Aug/2021 07:45:53] "GET /static/rest_framework_swagger/css/reset.css HTTP/1.1" 200 1066
+[30/Aug/2021 07:45:53] "GET /static/rest_framework_swagger/css/typography.css HTTP/1.1" 200 452
+[30/Aug/2021 07:45:53] "GET /static/rest_framework_swagger/lib/object-assign-pollyfill.js HTTP/1.1" 200 692
+[30/Aug/2021 07:45:53] "GET /static/rest_framework_swagger/lib/jquery.slideto.min.js HTTP/1.1" 200 369
+[30/Aug/2021 07:45:53] "GET /static/rest_framework_swagger/css/screen.css HTTP/1.1" 200 48986
+[30/Aug/2021 07:45:53] "GET /static/rest_framework_swagger/lib/jquery-1.8.0.min.js HTTP/1.1" 200 92555
+[30/Aug/2021 07:45:53] "GET /static/rest_framework_swagger/lib/jquery.wiggle.min.js HTTP/1.1" 200 762
+[30/Aug/2021 07:45:53] "GET /static/rest_framework_swagger/lib/jquery.ba-bbq.min.js HTTP/1.1" 200 4119
+[30/Aug/2021 07:45:53] "GET /static/rest_framework_swagger/lib/handlebars-2.0.0.js HTTP/1.1" 200 48517
+[30/Aug/2021 07:45:53] "GET /static/rest_framework_swagger/lib/js-yaml.min.js HTTP/1.1" 200 43621
+[30/Aug/2021 07:45:53] "GET /static/rest_framework_swagger/lib/lodash.min.js HTTP/1.1" 200 52646
+[30/Aug/2021 07:45:53] "GET /static/rest_framework_swagger/lib/backbone-min.js HTTP/1.1" 200 20390
+[30/Aug/2021 07:45:53] "GET /static/rest_framework_swagger/lib/highlight.9.1.0.pack.js HTTP/1.1" 200 11037
+[30/Aug/2021 07:45:53] "GET /static/rest_framework_swagger/swagger-ui.min.js HTTP/1.1" 200 289384
+[30/Aug/2021 07:45:53] "GET /static/rest_framework_swagger/lib/highlight.9.1.0.pack_extended.js HTTP/1.1" 200 1025
+[30/Aug/2021 07:45:53] "GET /static/rest_framework_swagger/lib/marked.js HTTP/1.1" 200 28156
+[30/Aug/2021 07:45:53] "GET /static/rest_framework_swagger/lib/jsoneditor.min.js HTTP/1.1" 200 130042
+[30/Aug/2021 07:45:53] "GET /static/rest_framework_swagger/lib/swagger-oauth.js HTTP/1.1" 200 11615
+[30/Aug/2021 07:45:53] "GET /static/rest_framework_swagger/images/logo_small.png HTTP/1.1" 200 770
+[30/Aug/2021 07:45:54] "GET /static/rest_framework_swagger/init.js HTTP/1.1" 200 1434
+[30/Aug/2021 07:45:54] "GET /static/rest_framework_swagger/css/print.css HTTP/1.1" 200 46473
+[30/Aug/2021 07:45:54] "GET /docs/?format=openapi HTTP/1.1" 200 4334
+[30/Aug/2021 07:45:56] "GET /docs/?format=openapi HTTP/1.1" 200 4334
+[30/Aug/2021 07:45:56] "GET /static/rest_framework_swagger/images/favicon-32x32.png HTTP/1.1" 200 1654
+[30/Aug/2021 07:46:48] "GET /static/rest_framework_swagger/images/throbber.gif HTTP/1.1" 200 9257
+Internal Server Error: /api/auth/login
+Traceback (most recent call last):
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column auth_user.middle_name does not exist
+LINE 1: ...h_user"."is_superuser", "auth_user"."first_name", "auth_user...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/day-beacon/the-day-beacon_backend/api/views/userView.py", line 198, in post
+    result = userService.login(request, format=None)
+  File "/var/www/html/day-beacon/the-day-beacon_backend/api/services/user/userService.py", line 46, in login
+    user = self.user_authenticate(username, password)
+  File "/var/www/html/day-beacon/the-day-beacon_backend/api/services/user/userService.py", line 70, in user_authenticate
+    user = User.objects.get(email=user_name)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/models/query.py", line 402, in get
+    num = len(clone)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/models/query.py", line 256, in __len__
+    self._fetch_all()
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/models/query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/models/query.py", line 55, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1097, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column auth_user.middle_name does not exist
+LINE 1: ...h_user"."is_superuser", "auth_user"."first_name", "auth_user...
+                                                             ^
+
+[30/Aug/2021 07:46:48] "POST /api/auth/login HTTP/1.1" 500 22251
+Internal Server Error: /api/auth/login
+Traceback (most recent call last):
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column auth_user.middle_name does not exist
+LINE 1: ...h_user"."is_superuser", "auth_user"."first_name", "auth_user...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/day-beacon/the-day-beacon_backend/api/views/userView.py", line 198, in post
+    result = userService.login(request, format=None)
+  File "/var/www/html/day-beacon/the-day-beacon_backend/api/services/user/userService.py", line 46, in login
+    user = self.user_authenticate(username, password)
+  File "/var/www/html/day-beacon/the-day-beacon_backend/api/services/user/userService.py", line 70, in user_authenticate
+    user = User.objects.get(email=user_name)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/models/query.py", line 402, in get
+    num = len(clone)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/models/query.py", line 256, in __len__
+    self._fetch_all()
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/models/query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/models/query.py", line 55, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1097, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column auth_user.middle_name does not exist
+LINE 1: ...h_user"."is_superuser", "auth_user"."first_name", "auth_user...
+                                                             ^
+
+[30/Aug/2021 07:47:08] "POST /api/auth/login HTTP/1.1" 500 22317
+Internal Server Error: /api/auth/login
+Traceback (most recent call last):
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column auth_user.middle_name does not exist
+LINE 1: ...h_user"."is_superuser", "auth_user"."first_name", "auth_user...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/day-beacon/the-day-beacon_backend/api/views/userView.py", line 198, in post
+    result = userService.login(request, format=None)
+  File "/var/www/html/day-beacon/the-day-beacon_backend/api/services/user/userService.py", line 46, in login
+    user = self.user_authenticate(username, password)
+  File "/var/www/html/day-beacon/the-day-beacon_backend/api/services/user/userService.py", line 70, in user_authenticate
+    user = User.objects.get(email=user_name)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/models/query.py", line 402, in get
+    num = len(clone)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/models/query.py", line 256, in __len__
+    self._fetch_all()
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/models/query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/models/query.py", line 55, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1097, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column auth_user.middle_name does not exist
+LINE 1: ...h_user"."is_superuser", "auth_user"."first_name", "auth_user...
+                                                             ^
+
+[30/Aug/2021 07:47:09] "POST /api/auth/login HTTP/1.1" 500 22317
+Not Found: /
+[30/Aug/2021 08:20:37] "GET / HTTP/1.1" 404 2265
+Not Found: /favicon.ico
+[30/Aug/2021 08:20:37] "GET /favicon.ico HTTP/1.1" 404 2316
+[30/Aug/2021 10:02:55] "GET /docs/ HTTP/1.1" 200 3805
+Internal Server Error: /api/auth/sign-up/
+Traceback (most recent call last):
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column auth_user.middle_name does not exist
+LINE 1: ...h_user"."is_superuser", "auth_user"."first_name", "auth_user...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/day-beacon/the-day-beacon_backend/api/views/userView.py", line 116, in post
+    result = userService.sign_up(request, format=None)
+  File "/var/www/html/day-beacon/the-day-beacon_backend/api/services/user/userService.py", line 137, in sign_up
+    self.validate_signup_data(request.data)
+  File "/var/www/html/day-beacon/the-day-beacon_backend/api/services/user/userService.py", line 149, in validate_signup_data
+    user = User.objects.get(phone_no=data.get('phone_no'))
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/models/query.py", line 402, in get
+    num = len(clone)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/models/query.py", line 256, in __len__
+    self._fetch_all()
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/models/query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/models/query.py", line 55, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1097, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column auth_user.middle_name does not exist
+LINE 1: ...h_user"."is_superuser", "auth_user"."first_name", "auth_user...
+                                                             ^
+
+[30/Aug/2021 10:44:31] "POST /api/auth/sign-up/ HTTP/1.1" 500 22049
+Not Found: /api/auth/login/
+[30/Aug/2021 10:44:53] "POST /api/auth/login/ HTTP/1.1" 404 3742
+Internal Server Error: /api/auth/login
+Traceback (most recent call last):
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column auth_user.middle_name does not exist
+LINE 1: ...h_user"."is_superuser", "auth_user"."first_name", "auth_user...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/day-beacon/the-day-beacon_backend/api/views/userView.py", line 198, in post
+    result = userService.login(request, format=None)
+  File "/var/www/html/day-beacon/the-day-beacon_backend/api/services/user/userService.py", line 46, in login
+    user = self.user_authenticate(username, password)
+  File "/var/www/html/day-beacon/the-day-beacon_backend/api/services/user/userService.py", line 70, in user_authenticate
+    user = User.objects.get(email=user_name)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/models/query.py", line 402, in get
+    num = len(clone)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/models/query.py", line 256, in __len__
+    self._fetch_all()
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/models/query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/models/query.py", line 55, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1097, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/html/day-beacon/day-beacon-venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column auth_user.middle_name does not exist
+LINE 1: ...h_user"."is_superuser", "auth_user"."first_name", "auth_user...
+                                                             ^
+
+[30/Aug/2021 10:48:14] "POST /api/auth/login HTTP/1.1" 500 22024
+Not Found: /api/user/forgot-password/
+[30/Aug/2021 10:51:10] "PUT /api/user/forgot-password/ HTTP/1.1" 404 3771
+/var/www/html/day-beacon/the-day-beacon_backend/api/models/__init__.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 30, 2021 - 07:35:16
+Django version 2.2, using settings 'day_beacon.settings'
+Starting development server at http://0.0.0.0:1102/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+[30/Aug/2021 10:53:10] "POST /api/auth/login/ HTTP/1.1" 200 716
+[30/Aug/2021 10:54:33] "POST /api/auth/login/ HTTP/1.1" 200 716
+Bad Request: /api/auth/login/
+[30/Aug/2021 11:39:18] "POST /api/auth/login/ HTTP/1.1" 400 56
+Bad Request: /api/auth/login/
+[30/Aug/2021 11:39:28] "POST /api/auth/login/ HTTP/1.1" 400 56
+Bad Request: /api/auth/login/
+[30/Aug/2021 11:39:30] "POST /api/auth/login/ HTTP/1.1" 400 56
+Bad Request: /api/auth/login/
+[30/Aug/2021 11:39:31] "POST /api/auth/login/ HTTP/1.1" 400 56
+[30/Aug/2021 11:39:44] "POST /api/auth/login/ HTTP/1.1" 200 716
+[30/Aug/2021 11:53:17] "POST /api/auth/login/ HTTP/1.1" 200 716
+[30/Aug/2021 11:53:21] "POST /api/auth/login/ HTTP/1.1" 200 716
+[30/Aug/2021 11:53:32] "POST /api/auth/login/ HTTP/1.1" 200 716
+[30/Aug/2021 11:55:16] "POST /api/auth/login/ HTTP/1.1" 200 716
+[30/Aug/2021 11:55:57] "POST /api/auth/login/ HTTP/1.1" 200 716

@@ -1,0 +1,1 @@
+LOCATION_CREATED = "Location Created"
