@@ -2,7 +2,7 @@ from rest_framework import serializers
 from api.models import UploadMedia
 
 from django.core.exceptions import ValidationError
-from day_beacon.settings import TIME12HRSFORMAT, DATEFORMAT
+from bitgo.settings import TIME12HRSFORMAT, DATEFORMAT
 
 import base64
 

@@ -26,13 +26,13 @@ urlpatterns = [
     path('user/update-user-details/<int:user_id>/',UpdateUsersDetailsView.as_view(), name="update-user-details"),
     path('user/get-all-teacher-classes-by-token/',GetAllTeacherClassDetails.as_view(), name="update-user-details"),
 
-    #organisation
-    path('branch/create-branch/', CreateGetBranchView.as_view(), name="create-branch"),
-    path('branch/get-all-branches/', CreateGetBranchView.as_view(), name="get-all-branches"),
-    path('class/create-classes/', CreateGetClassesView.as_view(), name="create-classes"),
-    path('class/get-all-classes-by-branch-id/<int:branch_id>/', CreateGetClassesView.as_view(), name="get-all-classes-by-branch-id"),
-    path('class/create-sections/', CreateGetSectionsView.as_view(), name="create-sections"),
-    path('class/get-all-sections-by-class-id/<int:class_id>/', CreateGetSectionsView.as_view(), name="get-all-sections-by-class-id"),
+    # #organisation
+    # path('branch/create-branch/', CreateGetBranchView.as_view(), name="create-branch"),
+    # path('branch/get-all-branches/', CreateGetBranchView.as_view(), name="get-all-branches"),
+    # path('class/create-classes/', CreateGetClassesView.as_view(), name="create-classes"),
+    # path('class/get-all-classes-by-branch-id/<int:branch_id>/', CreateGetClassesView.as_view(), name="get-all-classes-by-branch-id"),
+    # path('class/create-sections/', CreateGetSectionsView.as_view(), name="create-sections"),
+    # path('class/get-all-sections-by-class-id/<int:class_id>/', CreateGetSectionsView.as_view(), name="get-all-sections-by-class-id"),
     
     #role
     path('role/get-all-roles/', RoleListView.as_view(), name="get-all-role"),
@@ -44,4 +44,6 @@ urlpatterns = [
     #uploadMedia
     path('upload/media/', UploadMediaView.as_view(), name="upload-media"),
     path('delete-media/<int:pk>/', DeleteMediaView.as_view(), name="delete-media"),
+
+    # Bitgo 
 ]

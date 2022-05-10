@@ -1,5 +1,5 @@
 """
-WSGI config for day_beacon project.
+WSGI config for bitgo project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'day_beacon.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'bitgo.settings')
 
 application = get_wsgi_application()

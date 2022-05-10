@@ -21,10 +21,10 @@ from django.core.files.base import ContentFile
 from .userBaseService import UserBaseService
 from api.utils.messages.userMessages import *
 from api.utils.messages.commonMessages import *
-from api.models import User, UserSession, Role, UserClassDetails
+from api.models import User, Role
 from api.utils.getUserByToken import get_user_by_token
 from api.serializers.user import *
-from day_beacon import settings
+from bitgo import settings
 
 class UserService(UserBaseService):
 	"""

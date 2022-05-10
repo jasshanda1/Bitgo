@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from api.models import EducationHistory
 from django.core.exceptions import ValidationError
-from day_beacon.settings import TIME12HRSFORMAT, DATEFORMAT
+from bitgo.settings import TIME12HRSFORMAT, DATEFORMAT
 
 
 class CreateEducationHistorySerializer(serializers.ModelSerializer):

@@ -1,5 +1,5 @@
 import boto3
-from day_beacon.settings import *
+from bitgo.settings import *
 import random
 
 access_key_id = AWS_ACCESS_KEY_ID
