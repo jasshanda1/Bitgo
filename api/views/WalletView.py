@@ -10,6 +10,47 @@ from rest_framework.response import Response
 import json
 from api.utils.custom_generics import *
 from rest_framework.generics import RetrieveAPIView
+from rest_framework.generics import ListAPIView
+
+class ListAPIUserWalletView(CustomListAPIView):
+
+    permission_classes = [AllowAny]
+
+    queryset = UserBitgoWalletAddress.objects.all()
+    serializer_class = UserBitgoWalletAddressSerializer
+    
+
+class RetrieveWalletAPIView(CustomRetrieveAPIView):
+
+    permission_classes = [AllowAny]
+
+    queryset = UserBitgoWalletAddress.objects.all()
+    serializer_class = UserBitgoWalletAddressSerializer
+    lookup_field = 'id'
+
+class CreateWalletAddressAPIView(CustomRetrieveAPIView):
+
+    permission_classes = [AllowAny]
+
+    queryset = UserBitgoWalletAddress.objects.all()
+    serializer_class = UserBitgoWalletAddressSerializer
+
+class UpdateWalletAddressAPIView(CustomUpdateAPIView):
+
+    permission_classes = [AllowAny]
+
+    queryset = UserBitgoWalletAddress.objects.all()
+    serializer_class = UserBitgoWalletAddressSerializer
+    lookup_field = 'id'
+
+class DeleteWalletAddressAPIView(CustomDeleteAPIView):
+
+    permission_classes = [AllowAny]
+
+    queryset = UserBitgoWalletAddress.objects.all()
+    serializer_class = UserBitgoWalletAddressSerializer
+    lookup_field = 'id'
+
 
 class CreateGetUserWalletView(CustomListCreateAPIView):
 
@@ -25,8 +66,3 @@ class RetrieveUpdateDeleteItemWalletView(CustomRetrieveUpdateDeleteItem):
     queryset = UserBitgoWalletAddress.objects.all()
     serializer_class = UserBitgoWalletAddressSerializer
     lookup_field = 'id'
-
-# class SingleItem(RetrieveAPIView):
-
-#     queryset = Item.objects.all()
-#     serializer_class = ItemSerializer

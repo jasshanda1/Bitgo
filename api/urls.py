@@ -46,7 +46,11 @@ urlpatterns = [
     path('delete-media/<int:pk>/', DeleteMediaView.as_view(), name="delete-media"),
 
     # Bitgo 
-    path('bitgo/get-create-user-wallet-address/',CreateGetUserWalletView.as_view(),name = "create-user-wallet-view"),
+    path('bitgo/get-create-user-wallet-address/',CreateGetUserWalletView.as_view(),name = "get-create-user-wallet-view"),
     path('bitgo/retrieve-update-delete-user-wallet-address/<int:id>/',RetrieveUpdateDeleteItemWalletView.as_view(),name = "retrive-update-delete-user-wallet-address"),
-
+    path('bitgo/retrieve-user-wallet-address/<int:id>/',RetrieveWalletAPIView.as_view(),name = "retrive-user-wallet-address"),
+    path('bitgo/get-all-user-wallet-address/',ListAPIUserWalletView.as_view(),name = "get-all-user-wallet-address"),
+    path('bitgo/create-user-wallet-address/',CreateWalletAddressAPIView.as_view(),name = "create-user-wallet-view"),
+    path('bitgo/update-user-wallet-address/<int:id>/',UpdateWalletAddressAPIView.as_view(),name = "create-user-wallet-view"),
+    path('bitgo/delete-user-wallet-address/<int:id>/',DeleteWalletAddressAPIView.as_view(),name = "create-user-wallet-view"),
 ]
